@@ -1,0 +1,22 @@
+{
+  "name": "shanor-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shanor portfolio website",
+  "scripts": {
+    "build:direct": "node scripts/build-direct.mjs",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "serve": "python3 -m http.server 4173",
+    "test:e2e": "playwright test --config=playwright.config.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@playwright/test": "^1.54.2",
+    "esbuild": "^0.25.8",
+    "eslint": "^9.30.1",
+    "prettier": "^3.6.2"
+  }
+}

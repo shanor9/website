@@ -13,7 +13,12 @@
   position: relative;
   height: 92px;
   background:
-    radial-gradient(circle at 52% 62%, rgba(232, 224, 165, 0.72) 0, rgba(232, 224, 165, 0.72) 30px, transparent 31px),
+    radial-gradient(
+      circle at 52% 62%,
+      rgba(232, 224, 165, 0.72) 0,
+      rgba(232, 224, 165, 0.72) 30px,
+      transparent 31px
+    ),
     radial-gradient(circle at 75% 12%, rgba(255, 255, 255, 0.38) 0 1.2px, transparent 2px),
     radial-gradient(circle at 15% 16%, rgba(255, 255, 255, 0.33) 0 1.3px, transparent 2px),
     radial-gradient(circle at 61% 18%, rgba(255, 255, 255, 0.24) 0 1.1px, transparent 2px),

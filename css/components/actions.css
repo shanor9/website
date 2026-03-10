@@ -20,7 +20,11 @@
   font-weight: 600;
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease, color 0.22s ease;
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease,
+    color 0.22s ease;
 }
 
 .action-button::before {
@@ -30,7 +34,12 @@
   border-radius: inherit;
   pointer-events: none;
   opacity: 0;
-  background: linear-gradient(105deg, transparent 12%, rgba(245, 226, 195, 0.22) 50%, transparent 88%);
+  background: linear-gradient(
+    105deg,
+    transparent 12%,
+    rgba(245, 226, 195, 0.22) 50%,
+    transparent 88%
+  );
   transition: opacity 0.22s ease;
 }
 

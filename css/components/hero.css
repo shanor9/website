@@ -98,7 +98,10 @@ h2 {
 .panel p,
 .panel li,
 .panel-hero h1 {
-  transition: transform 0.24s ease, color 0.24s ease, text-shadow 0.24s ease;
+  transition:
+    transform 0.24s ease,
+    color 0.24s ease,
+    text-shadow 0.24s ease;
   will-change: transform;
 }
 

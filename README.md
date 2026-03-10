@@ -17,6 +17,10 @@ Ce qui est implemente et fonctionnel:
 - Serpent en corps continu (pas en petits ronds)
 - Serpent fuyant quand la souris s'approche
 - Support `prefers-reduced-motion`
+- Favicon + meta social preview (`og:` + Twitter cards)
+- Outillage lint/format configure (ESLint + Prettier)
+- Build automatique de `js/app.direct.js` depuis les modules source
+- Smoke test e2e Playwright sur les interactions principales
 - Fonctionne dans les deux cas:
   - en `file://` (ouverture directe)
   - en `http(s)://` (mode module)
@@ -74,8 +78,10 @@ CSS est modulaire:
 ├── styles.css
 ├── assets/
 │   ├── discord-avatar.png
+│   ├── favicon.svg
 │   ├── grenade.png
 │   ├── lancegrenade_sober.svg
+│   ├── og-image.png
 │   └── tee_sober.svg
 ├── css/
 │   ├── accessibility.css
@@ -226,6 +232,28 @@ Tradeoff connu:
 - `js/app.direct.js` duplique la logique module pour supporter `file://`.
 - C'est volontaire pour la portabilite, mais il faut maintenir les deux chemins synchronises.
 
+## Outillage Dev Ajoute
+
+Scripts npm disponibles:
+
+- `npm run build:direct` : genere `js/app.direct.js` depuis `js/app.js` avec esbuild
+- `npm run lint` : lint JS avec ESLint (config flat)
+- `npm run lint:fix` : corrige automatiquement ce qui peut l'etre
+- `npm run format` : formate le projet avec Prettier
+- `npm run format:check` : verification du format sans ecriture
+- `npm run serve` : lance un serveur local simple
+- `npm run test:e2e` : lance les smoke tests Playwright
+
+Fichiers de config:
+
+- `package.json`
+- `eslint.config.mjs`
+- `.prettierrc.json`
+- `.prettierignore`
+- `playwright.config.mjs`
+- `tests/smoke.spec.mjs`
+- `scripts/build-direct.mjs`
+
 ## Git / Depot
 
 Le projet est initialise avec Git.
@@ -236,7 +264,5 @@ Le projet est initialise avec Git.
 ## Prochaines Ameliorations (Optionnel)
 
 - Remplacer les liens projets placeholders par les vrais repos/demos
-- Ajouter favicon + meta social preview (`og:`)
-- Ajouter outillage lint/format (ESLint + Prettier)
-- Ajouter un mini build pour generer `app.direct.js` automatiquement depuis les modules
-- Ajouter un smoke test e2e leger (Playwright/Cypress) sur les interactions principales
+- Ajouter snapshots visuels Playwright pour detecter les regressions UI
+- Ajouter CI GitHub Actions pour `lint + format:check + test:e2e`
