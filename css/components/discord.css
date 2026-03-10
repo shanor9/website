@@ -1,0 +1,103 @@
+.panel-discord {
+  overflow: hidden;
+}
+
+.discord-card {
+  border: 1px solid rgba(113, 131, 165, 0.28);
+  border-radius: 14px;
+  overflow: hidden;
+  background: linear-gradient(168deg, rgba(10, 14, 22, 0.86), rgba(7, 10, 16, 0.92));
+}
+
+.discord-banner {
+  position: relative;
+  height: 92px;
+  background:
+    radial-gradient(circle at 52% 62%, rgba(232, 224, 165, 0.72) 0, rgba(232, 224, 165, 0.72) 30px, transparent 31px),
+    radial-gradient(circle at 75% 12%, rgba(255, 255, 255, 0.38) 0 1.2px, transparent 2px),
+    radial-gradient(circle at 15% 16%, rgba(255, 255, 255, 0.33) 0 1.3px, transparent 2px),
+    radial-gradient(circle at 61% 18%, rgba(255, 255, 255, 0.24) 0 1.1px, transparent 2px),
+    linear-gradient(180deg, rgba(14, 25, 40, 0.95), rgba(8, 14, 25, 0.98));
+}
+
+.discord-content {
+  margin-top: -24px;
+  padding: 0 0.9rem 0.95rem;
+}
+
+.discord-head {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+.discord-avatar-wrap {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.discord-avatar {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  border: 4px solid rgba(3, 6, 11, 1);
+  overflow: hidden;
+  background: linear-gradient(145deg, rgba(41, 49, 67, 0.95), rgba(19, 25, 39, 1));
+}
+
+.discord-avatar-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+
+.discord-online-dot {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(3, 6, 11, 1);
+  background: #35d072;
+  box-shadow: 0 0 10px rgba(53, 208, 114, 0.55);
+}
+
+.discord-identity {
+  margin-bottom: 0.28rem;
+}
+
+.discord-name {
+  font-size: 1.24rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.discord-handle {
+  margin-top: 0.22rem;
+  font-size: 0.93rem;
+  color: #a9b2c4;
+}
+
+.discord-status {
+  margin-top: 0.72rem;
+  padding: 0.5rem 0.6rem;
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid rgba(63, 75, 101, 0.42);
+  border-radius: 10px;
+  background: rgba(10, 14, 21, 0.75);
+  color: #c8cedc;
+  font-size: 0.92rem;
+  font-style: italic;
+}
+
+.discord-private {
+  margin-top: 0.62rem;
+  color: #98a0af;
+  font-size: 0.86rem;
+  letter-spacing: 0.02em;
+}

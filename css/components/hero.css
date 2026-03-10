@@ -1,0 +1,139 @@
+h1 {
+  line-height: 1.1;
+  font-size: clamp(1.8rem, 5vw, 2.9rem);
+}
+
+.hero-bio {
+  margin: 0.55rem auto 0;
+  max-width: 44ch;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.tee-showcase {
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 0.65rem;
+  width: clamp(156px, 29vw, 236px);
+  animation: tee-float 3.8s ease-in-out infinite;
+}
+
+.tee-character {
+  width: 100%;
+  height: auto;
+  display: block;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.42));
+}
+
+.tee-weapon-button {
+  position: absolute;
+  top: 23%;
+  left: 52%;
+  width: 68%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transform: rotate(-12deg);
+  transform-origin: 22% 56%;
+}
+
+.tee-weapon-button:focus-visible {
+  outline: 2px solid rgba(232, 239, 255, 0.72);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.tee-weapon-button.is-firing {
+  animation: weapon-recoil 180ms ease;
+}
+
+.tee-muzzle-anchor {
+  position: absolute;
+  right: 2%;
+  top: 47%;
+  width: 6px;
+  height: 6px;
+  transform: translate(50%, -50%);
+  pointer-events: none;
+}
+
+.tee-weapon {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 7px 10px rgba(0, 0, 0, 0.42));
+}
+
+#fx-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.grenade-projectile {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 24px;
+  aspect-ratio: 64 / 36;
+  transform: translate(-9999px, -9999px);
+  image-rendering: pixelated;
+  filter: drop-shadow(0 4px 7px rgba(0, 0, 0, 0.38));
+}
+
+h2 {
+  margin-bottom: 0.55rem;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--warm-3);
+}
+
+.panel h2,
+.panel p,
+.panel li,
+.panel-hero h1 {
+  transition: transform 0.24s ease, color 0.24s ease, text-shadow 0.24s ease;
+  will-change: transform;
+}
+
+.panel-hero h1:hover {
+  transform: translateY(-2px) scale(1.02);
+  color: #f7f9ff;
+  text-shadow: 0 0 16px rgba(216, 226, 255, 0.35);
+}
+
+.panel h2:hover,
+.panel p:hover,
+.panel li:hover {
+  transform: translateX(6px) scale(1.02);
+  color: #e9eefb;
+  text-shadow: 0 0 12px rgba(170, 190, 255, 0.24);
+}
+
+@keyframes tee-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes weapon-recoil {
+  0% {
+    transform: rotate(-10deg) translateX(0);
+  }
+  35% {
+    transform: rotate(-10deg) translateX(-5px) translateY(1px);
+  }
+  100% {
+    transform: rotate(-10deg) translateX(0);
+  }
+}

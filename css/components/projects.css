@@ -1,0 +1,25 @@
+.text-list {
+  margin: 0;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.62rem;
+  color: var(--muted);
+}
+
+.project-item {
+  line-height: 1.55;
+  padding-right: 0.1rem;
+}
+
+.project-item p {
+  margin: 0;
+}
+
+.text-list strong {
+  color: var(--ink);
+}
+
+.project-link {
+  margin-top: 0.44rem;
+  min-width: 112px;
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 150">
+  <defs>
+    <linearGradient id="teeRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d92323"/>
+      <stop offset="1" stop-color="#9d1010"/>
+    </linearGradient>
+    <linearGradient id="teeRedDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bb1a1a"/>
+      <stop offset="1" stop-color="#7f0d0d"/>
+    </linearGradient>
+  </defs>
+
+  <g fill="none" stroke="#111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="128" cy="76" r="48" fill="url(#teeRed)"/>
+
+    <ellipse cx="114" cy="69" rx="6.5" ry="11" fill="#111" stroke="none"/>
+    <ellipse cx="137" cy="69" rx="6.5" ry="11" fill="#111" stroke="none"/>
+
+    <circle cx="176" cy="78" r="11" fill="url(#teeRed)" />
+
+    <ellipse cx="108" cy="138" rx="13" ry="8" fill="url(#teeRedDark)"/>
+    <ellipse cx="150" cy="138" rx="13" ry="8" fill="url(#teeRedDark)"/>
+  </g>
+</svg>

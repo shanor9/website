@@ -1,0 +1,14 @@
+@media (max-width: 640px) {
+  .layout {
+    padding-top: 3.2rem;
+    padding-bottom: 2.3rem;
+  }
+
+  .panel {
+    padding: 0.9rem;
+  }
+
+  .shooting-star {
+    width: 145px;
+  }
+}

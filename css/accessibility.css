@@ -1,0 +1,18 @@
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (hover: none) {
+  .panel-hero h1:hover,
+  .panel h2:hover,
+  .panel p:hover,
+  .panel li:hover {
+    transform: none;
+    text-shadow: none;
+  }
+}
