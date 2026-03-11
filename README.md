@@ -261,6 +261,11 @@ Le projet est initialise avec Git.
 - Branche par defaut: `main`
 - Remote: `git@github.com:shanor9/website.git`
 
+## Licence
+
+Ce projet est sous `Ombre License v1.0`.
+Voir le fichier `LICENSE`.
+
 ## Prochaines Ameliorations (Optionnel)
 
 - Remplacer les liens projets placeholders par les vrais repos/demos
