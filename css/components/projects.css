@@ -18,8 +18,3 @@
 .text-list strong {
   color: var(--ink);
 }
-
-.project-link {
-  margin-top: 0.44rem;
-  min-width: 112px;
-}
